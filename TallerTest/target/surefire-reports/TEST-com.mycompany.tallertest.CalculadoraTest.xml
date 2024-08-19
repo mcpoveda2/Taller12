@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.tallertest.CalculadoraTest" time="0.078" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.tallertest.CalculadoraTest" time="0.082" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\micha\OneDrive\Documentos\NetBeansProjects\TallerTest\target\test-classes;C:\Users\micha\OneDrive\Documentos\NetBeansProjects\TallerTest\target\classes;C:\Users\micha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\micha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\micha\Github\Taller12\TallerTest\target\test-classes;C:\Users\micha\Github\Taller12\TallerTest\target\classes;C:\Users\micha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\micha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,10 +16,10 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\micha\AppData\Local\Temp\surefire3817836239517702701\surefirebooter-20240819160034729_3.jar C:\Users\micha\AppData\Local\Temp\surefire3817836239517702701 2024-08-19T16-00-34_601-jvmRun1 surefire-20240819160034729_1tmp surefire_0-20240819160034729_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\micha\AppData\Local\Temp\surefire1874091409188078422\surefirebooter-20240819162404764_3.jar C:\Users\micha\AppData\Local\Temp\surefire1874091409188078422 2024-08-19T16-24-04_622-jvmRun1 surefire-20240819162404764_1tmp surefire_0-20240819162404764_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="com.mycompany.tallertest.CalculadoraTest"/>
-    <property name="surefire.test.class.path" value="C:\Users\micha\OneDrive\Documentos\NetBeansProjects\TallerTest\target\test-classes;C:\Users\micha\OneDrive\Documentos\NetBeansProjects\TallerTest\target\classes;C:\Users\micha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\micha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\micha\Github\Taller12\TallerTest\target\test-classes;C:\Users\micha\Github\Taller12\TallerTest\target\classes;C:\Users\micha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\micha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\micha"/>
     <property name="user.language" value="en"/>
@@ -27,12 +27,12 @@
     <property name="java.version.date" value="2023-10-17"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\micha\OneDrive\Documentos\NetBeansProjects\TallerTest"/>
+    <property name="basedir" value="C:\Users\micha\Github\Taller12\TallerTest"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\micha\AppData\Local\Temp\surefire3817836239517702701\surefirebooter-20240819160034729_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\micha\AppData\Local\Temp\surefire1874091409188078422\surefirebooter-20240819162404764_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
@@ -48,7 +48,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\micha\AppData\Local\Temp\"/>
     <property name="java.version" value="21.0.1"/>
-    <property name="user.dir" value="C:\Users\micha\OneDrive\Documentos\NetBeansProjects\TallerTest"/>
+    <property name="user.dir" value="C:\Users\micha\Github\Taller12\TallerTest"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.language.format" value="es"/>
@@ -62,23 +62,19 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testResta" classname="com.mycompany.tallertest.CalculadoraTest" time="0.011">
+  <testcase name="testResta" classname="com.mycompany.tallertest.CalculadoraTest" time="0.02">
     <system-out><![CDATA[resta
 ]]></system-out>
   </testcase>
-  <testcase name="testSuma" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
-    <system-out><![CDATA[suma
-]]></system-out>
-  </testcase>
-  <testcase name="testRadicacion" classname="com.mycompany.tallertest.CalculadoraTest" time="0.002">
+  <testcase name="testRadicacion" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
     <system-out><![CDATA[radicacion
 ]]></system-out>
   </testcase>
-  <testcase name="testExponenciacion" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
+  <testcase name="testExponenciacion" classname="com.mycompany.tallertest.CalculadoraTest" time="0.002">
     <system-out><![CDATA[exponenciacion
 ]]></system-out>
   </testcase>
-  <testcase name="testMultiplicacion" classname="com.mycompany.tallertest.CalculadoraTest" time="0.0">
+  <testcase name="testMultiplicacion" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
     <system-out><![CDATA[multiplicacion
 ]]></system-out>
   </testcase>
@@ -92,6 +88,26 @@
   </testcase>
   <testcase name="testDivision" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
     <system-out><![CDATA[division
+]]></system-out>
+  </testcase>
+  <testcase name="testSuma_TCS01" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
+    <system-out><![CDATA[suma
+]]></system-out>
+  </testcase>
+  <testcase name="testSuma_TCS02" classname="com.mycompany.tallertest.CalculadoraTest" time="0.0">
+    <system-out><![CDATA[suma
+]]></system-out>
+  </testcase>
+  <testcase name="testSuma_TCS03" classname="com.mycompany.tallertest.CalculadoraTest" time="0.002">
+    <system-out><![CDATA[suma
+]]></system-out>
+  </testcase>
+  <testcase name="testSuma_TCS04" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
+    <system-out><![CDATA[suma
+]]></system-out>
+  </testcase>
+  <testcase name="testSuma_TCS05" classname="com.mycompany.tallertest.CalculadoraTest" time="0.001">
+    <system-out><![CDATA[suma
 ]]></system-out>
   </testcase>
 </testsuite>
