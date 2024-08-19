@@ -16,27 +16,26 @@ import static org.junit.Assert.*;
  * @author micha
  */
 public class CalculadoraTest {
-    
+
     public CalculadoraTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
 
-    
     @Test
     public void testSuma_TCS01() {
         System.out.println("suma");
@@ -48,8 +47,7 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
     }
-    
-    
+
     @Test
     public void testSuma_TCS02() {
         System.out.println("suma");
@@ -61,9 +59,7 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
     }
-    
-    
-    
+
     @Test
     public void testSuma_TCS03() {
         System.out.println("suma");
@@ -75,7 +71,7 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
     }
-    
+
     @Test
     public void testSuma_TCS04() {
         System.out.println("suma");
@@ -87,7 +83,7 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0);
         //fail("The test case is a prototype.");
     }
-    
+
     @Test
     public void testSuma_TCS05() {
         System.out.println("suma");
@@ -225,7 +221,7 @@ public class CalculadoraTest {
     @Test(expected = ArithmeticException.class)
     public void testDivision_TCD02() {
         double a = 10.0;
-        double b = 0.0;
+        double b = 2;
         Calculadora instance = new Calculadora();
         instance.division(a, b);
     }
@@ -307,5 +303,52 @@ public class CalculadoraTest {
         assertEquals(expResult, result);
         //fail("The test case is a prototype.");
     }
-    
+
+    @Test
+    public void testSonAmigos_TCNAC01() {
+        System.out.println("sonAmigos_TCNAC01");
+        int a = 220;
+        int b = 284;
+        Calculadora instance = new Calculadora();
+        boolean expResult = true;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testSonAmigos_TCNAC02() {
+        System.out.println("sonAmigos_TCNAC02");
+        int a = 1184;
+        int b = 1210;
+        Calculadora instance = new Calculadora();
+        boolean expResult = true;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testSonAmigos_TCNAC03() {
+        System.out.println("sonAmigos_TCNAC03");
+        int a = 10;
+        int b = 5;
+        Calculadora instance = new Calculadora();
+        boolean expResult = false;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testSonAmigos_TCNAC04() {
+        System.out.println("sonAmigos_TCNAC04");
+        int a = 0;
+        int b = 1;
+        Calculadora instance = new Calculadora();
+        boolean expResult = false;
+        boolean result = instance.sonAmigos(a, b);
+        assertEquals(expResult, result);
+        //fail("The test case is a prototype.");
+    }
 }
