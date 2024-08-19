@@ -101,16 +101,75 @@ public class CalculadoraTest {
     }
 
     @Test
-    public void testResta() {
-        System.out.println("resta");
+    public void testResta_TCR01() {
+        double a = -3.0;
+        double b = -5.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 2.0;
+        double result = instance.resta(a, b);
+        assertEquals(expResult, result, 0.0);
+    }
+
+    @Test
+    public void testResta_TCR02() {
+        double a = -5.0;
+        double b = -3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = -2.0;
+        double result = instance.resta(a, b);
+        assertEquals(expResult, result, 0.0);
+    }
+
+    @Test
+    public void testResta_TCR03() {
         double a = 0.0;
         double b = 0.0;
         Calculadora instance = new Calculadora();
         double expResult = 0.0;
         double result = instance.resta(a, b);
-        assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        assertEquals(expResult, result, 0.0);
     }
+
+    @Test
+    public void testResta_TCR04() {
+        double a = 10.0;
+        double b = 5.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 5.0;
+        double result = instance.resta(a, b);
+        assertEquals(expResult, result, 0.0);
+    }
+
+    @Test
+    public void testResta_TCR05() {
+        double a = 5.0;
+        double b = 10.0;
+        Calculadora instance = new Calculadora();
+        double expResult = -5.0;
+        double result = instance.resta(a, b);
+        assertEquals(expResult, result, 0.0);
+    }
+
+    @Test
+    public void testResta_TCR06() {
+        double a = -7.0;
+        double b = 3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = -10.0;
+        double result = instance.resta(a, b);
+        assertEquals(expResult, result, 0.0);
+    }
+
+    @Test
+    public void testResta_TCR07() {
+        double a = 3.0;
+        double b = -7.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 10.0;
+        double result = instance.resta(a, b);
+        assertEquals(expResult, result, 0.0);
+    }
+
 
     @Test
     public void testMultiplicacion() {
