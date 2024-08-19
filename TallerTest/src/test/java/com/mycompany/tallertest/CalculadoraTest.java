@@ -221,7 +221,7 @@ public class CalculadoraTest {
     @Test(expected = ArithmeticException.class)
     public void testDivision_TCD02() {
         double a = 10.0;
-        double b = 2;
+        double b = 0;
         Calculadora instance = new Calculadora();
         instance.division(a, b);
     }
