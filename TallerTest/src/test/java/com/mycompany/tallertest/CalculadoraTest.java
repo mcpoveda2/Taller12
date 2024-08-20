@@ -489,4 +489,52 @@ public class CalculadoraTest {
         Calculadora instance = new Calculadora();
         instance.radicacion(numero, indice);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testSumaDivisores_Negativo() {
+        System.out.println("sumaDivisores_Negativo");
+        int x = -10;
+        Calculadora instance = new Calculadora();
+        instance.sumaDivisores(x); 
+    }
+
+    @Test
+    public void testSumaDivisores_TCSD01() {
+        System.out.println("sumaDivisores_TCSD01");
+        int x = 6;
+        Calculadora instance = new Calculadora();
+        int expResult = 6;
+        int result = instance.sumaDivisores(x);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testSumaDivisores_TCSD02() {
+        System.out.println("sumaDivisores_TCSD02");
+        int x = 10;
+        Calculadora instance = new Calculadora();
+        int expResult = 8;
+        int result = instance.sumaDivisores(x);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testSumaDivisores_TCSD03() {
+        System.out.println("sumaDivisores_TCSD03");
+        int x = 1;
+        Calculadora instance = new Calculadora();
+        int expResult = 1;
+        int result = instance.sumaDivisores(x);
+        assertEquals(expResult, result);
+    }
+
+    @Test
+    public void testSumaDivisores_TCSD04() {
+        System.out.println("sumaDivisores_TCSD04");
+        int x = 0;
+        Calculadora instance = new Calculadora();
+        int expResult = 1;
+        int result = instance.sumaDivisores(x);
+        assertEquals(expResult, result);
+    }
 }

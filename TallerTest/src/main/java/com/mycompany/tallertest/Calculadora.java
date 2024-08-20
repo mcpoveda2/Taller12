@@ -43,7 +43,7 @@ public class Calculadora {
             throw new ArithmeticException("No se puede calcular la raíz par de un número negativo.");
         }
         if (numero < 0 && indice % 2 != 0) {
-            return -Math.pow(-numero, 1.0 / indice); 
+            return -Math.pow(-numero, 1.0 / indice);
         }
         return Math.pow(numero, 1.0 / indice);
     }
@@ -54,16 +54,21 @@ public class Calculadora {
     }
 
     public int sumaDivisores(int x) {
-        int sum = 1;
-        for (int i = 2; i <= Math.sqrt(x); i++) {
+        if (x < 0) {
+            throw new IllegalArgumentException("El número debe ser no negativo.");
+        }
+        if (x == 0) {
+            return 1;
+        }
+        int sum = 0;
+        for (int i = 1; i <= Math.sqrt(x); i++) {
             if (x % i == 0) {
                 sum += i;
-                // Para manejar cuadrados perfectos
-                if (x / i != i)
+                if (i != x / i && i != 1) {
                     sum += x / i;
+                }
             }
         }
         return sum;
     }
-
 }
