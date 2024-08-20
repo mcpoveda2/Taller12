@@ -45,7 +45,7 @@ public class CalculadoraTest {
         double expResult = -8.0;
         double result = instance.suma(a, b);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -57,7 +57,7 @@ public class CalculadoraTest {
         double expResult = 0.0;
         double result = instance.suma(a, b);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -69,7 +69,7 @@ public class CalculadoraTest {
         double expResult = 15.0;
         double result = instance.suma(a, b);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -81,7 +81,7 @@ public class CalculadoraTest {
         double expResult = -4.0;
         double result = instance.suma(a, b);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -93,7 +93,7 @@ public class CalculadoraTest {
         double expResult = 4.0;
         double result = instance.suma(a, b);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -166,7 +166,6 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0.0);
     }
 
-
     @Test
     public void testMultiplicacion_TCM01() {
         double a = -3.0;
@@ -206,7 +205,6 @@ public class CalculadoraTest {
         double result = instance.multiplicacion(a, b);
         assertEquals(expResult, result, 0.0);
     }
-
 
     @Test
     public void testDivision_TCD01() {
@@ -256,7 +254,6 @@ public class CalculadoraTest {
         assertEquals(expResult, result, 0.0);
     }
 
-
     @Test
     public void testExponenciacion() {
         System.out.println("exponenciacion");
@@ -266,7 +263,7 @@ public class CalculadoraTest {
         double expResult = 0.0;
         double result = instance.exponenciacion(base, exponente);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -278,7 +275,7 @@ public class CalculadoraTest {
         double expResult = 0.0;
         double result = instance.radicacion(numero, indice);
         assertEquals(expResult, result, 0);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -290,7 +287,7 @@ public class CalculadoraTest {
         boolean expResult = false;
         boolean result = instance.sonAmigos(a, b);
         assertEquals(expResult, result);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -301,7 +298,7 @@ public class CalculadoraTest {
         int expResult = 1;
         int result = instance.sumaDivisores(x);
         assertEquals(expResult, result);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -313,7 +310,7 @@ public class CalculadoraTest {
         boolean expResult = true;
         boolean result = instance.sonAmigos(a, b);
         assertEquals(expResult, result);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -325,7 +322,7 @@ public class CalculadoraTest {
         boolean expResult = true;
         boolean result = instance.sonAmigos(a, b);
         assertEquals(expResult, result);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -337,7 +334,7 @@ public class CalculadoraTest {
         boolean expResult = false;
         boolean result = instance.sonAmigos(a, b);
         assertEquals(expResult, result);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
     }
 
     @Test
@@ -349,6 +346,70 @@ public class CalculadoraTest {
         boolean expResult = false;
         boolean result = instance.sonAmigos(a, b);
         assertEquals(expResult, result);
-        //fail("The test case is a prototype.");
+        // fail("The test case is a prototype.");
+    }
+
+    @Test
+    public void testExponenciacion_TCE01() {
+        System.out.println("exponenciacion_TCE01");
+        double base = 2.0;
+        double exponente = 3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 8.0;
+        double result = instance.exponenciacion(base, exponente);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test
+    public void testExponenciacion_TCE02() {
+        System.out.println("exponenciacion_TCE02");
+        double base = 2.0;
+        double exponente = 0.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 1.0;
+        double result = instance.exponenciacion(base, exponente);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test
+    public void testExponenciacion_TCE03() {
+        System.out.println("exponenciacion_TCE03");
+        double base = 2.0;
+        double exponente = -2.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 0.25;
+        double result = instance.exponenciacion(base, exponente);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test
+    public void testExponenciacion_TCE04() {
+        System.out.println("exponenciacion_TCE04");
+        double base = -2.0;
+        double exponente = 3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = -8.0;
+        double result = instance.exponenciacion(base, exponente);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test
+    public void testExponenciacion_TCE05() {
+        System.out.println("exponenciacion_TCE05");
+        double base = -2.0;
+        double exponente = 2.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 4.0;
+        double result = instance.exponenciacion(base, exponente);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testExponenciacion_TCE06() {
+        System.out.println("exponenciacion_TCE06");
+        double base = 0.0;
+        double exponente = 0.0;
+        Calculadora instance = new Calculadora();
+        instance.exponenciacion(base, exponente);
     }
 }

@@ -29,8 +29,12 @@ public class Calculadora {
     }
 
     public double exponenciacion(double base, double exponente) {
-        return Math.pow(base, exponente);
+    if (base == 0 && exponente == 0) {
+        throw new ArithmeticException("Indeterminación: no se puede calcular 0^0.");
     }
+    return Math.pow(base, exponente);
+}
+
 
     public double radicacion(double numero, double indice) {
         if (numero < 0) {
