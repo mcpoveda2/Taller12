@@ -266,16 +266,13 @@ public class CalculadoraTest {
         // fail("The test case is a prototype.");
     }
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void testRadicacion() {
         System.out.println("radicacion");
         double numero = 0.0;
         double indice = 0.0;
         Calculadora instance = new Calculadora();
-        double expResult = 0.0;
-        double result = instance.radicacion(numero, indice);
-        assertEquals(expResult, result, 0);
-        // fail("The test case is a prototype.");
+        instance.radicacion(numero, indice);
     }
 
     @Test
@@ -411,5 +408,85 @@ public class CalculadoraTest {
         double exponente = 0.0;
         Calculadora instance = new Calculadora();
         instance.exponenciacion(base, exponente);
+    }
+
+    @Test
+    public void testRadicacion_TCRa01() {
+        System.out.println("radicacion_TCRa01");
+        double numero = 16.0;
+        double indice = 2.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 4.0;
+        double result = instance.radicacion(numero, indice);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test
+    public void testRadicacion_TCRa02() {
+        System.out.println("radicacion_TCRa02");
+        double numero = 27.0;
+        double indice = 3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 3.0;
+        double result = instance.radicacion(numero, indice);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testRadicacion_TCRa03() {
+        System.out.println("radicacion_TCRa03");
+        double numero = -4.0;
+        double indice = 2.0;
+        Calculadora instance = new Calculadora();
+        instance.radicacion(numero, indice);
+    }
+
+    @Test
+    public void testRadicacion_TCRa04() {
+        System.out.println("radicacion_TCRa04");
+        double numero = -8.0;
+        double indice = 3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = -2.0;
+        double result = instance.radicacion(numero, indice);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test
+    public void testRadicacion_TCRa05() {
+        System.out.println("radicacion_TCRa05");
+        double numero = 8.0;
+        double indice = -3.0;
+        Calculadora instance = new Calculadora();
+        double expResult = 0.5;
+        double result = instance.radicacion(numero, indice);
+        assertEquals(expResult, result, 0);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testRadicacion_TCRa06() {
+        System.out.println("radicacion_TCRa06");
+        double numero = 0.0;
+        double indice = 0.0;
+        Calculadora instance = new Calculadora();
+        instance.radicacion(numero, indice);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testRadicacion_TCRa07() {
+        System.out.println("radicacion_TCRa07");
+        double numero = 1.0;
+        double indice = 0.0;
+        Calculadora instance = new Calculadora();
+        instance.radicacion(numero, indice);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testRadicacion_TCRa08() {
+        System.out.println("radicacion_TCRa08");
+        double numero = 5.0;
+        double indice = 0.0;
+        Calculadora instance = new Calculadora();
+        instance.radicacion(numero, indice);
     }
 }
